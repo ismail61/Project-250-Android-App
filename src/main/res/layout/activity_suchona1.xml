@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Suchona1Activity">
+    <TextView
+        android:text="بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_width="350dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="আরবি অক্ষরের সঠিক উচ্চারণ এবং নিয়মাবলি না জেনে বাংলা উচ্চারণ পড়লে আরবি বিশেষ অক্ষরের ভুল পড়া হয় এবং এতে অর্থ বদলে যেতে পারে এবং গুনাহগার হতে হয়। দয়া করে আপনার কাছের মসজিদের বা পরিচিত হাফেজ বা আলেমের কাছে বসে বা ফোনে আরবি অক্ষরের সঠিক উচ্চারণ শিখে কোরান পড়বেন।  আরবি অক্ষরের সঠিক উচ্চারণ না জেনে শুধু আরবির বাংলা উচ্চারণে কোরান পড়বেন না, কোরান আল্লাহর কথা এটা ভুল পড়া গুনাহ।"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#8BC34A"
+        android:layout_width="340dp"
+        android:layout_height="300dp" />
+
+</LinearLayout>

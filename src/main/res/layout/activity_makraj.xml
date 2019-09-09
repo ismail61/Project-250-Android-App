@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakrajActivity">
+    <TextView
+        android:text="\n   মাখরাজ হলো আরবী অক্ষরগুলোর উচ্চারণের স্হান ও উচ্চারণ কৌশল। বড়, ছোট, যে কোনো স্মার্টফোন ব্যবহারকারী, এই অ্যাপটির মাধ্যমে সবগুলো মাখরাজ বুঝে নিতে এবং মুখস্থ করে ফেলতে পারবেন সহজেই, আশাকরি।\n
+        \n
+        \n
+    মাখরাজ কেন শিখবো?
+        \n  - পবিত্র কোরআন পাঠ করা প্রত্যেক মুসলিম নারী-পুরুষের জন্য অপরিহার্য। আর তা পড়তে হবে তাজবীদ সহকারে, অর্থাৎ শুদ্ধভাবে এবং সঠিক উচ্চারণে।
+        \n  - কুরআন সঠিক উচ্চারণে পড়তে না পারলে কুরআন অভিশাপ দেয়।
+        \n  - নামাযে ভুল উচ্চারণে কুরআন তেলাওয়ার করলে নামায বাতিল হওয়ার সম্ভাবনা থাকে।\n
+"
+        android:layout_width="350dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

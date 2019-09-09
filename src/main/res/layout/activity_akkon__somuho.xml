@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Akkon_SomuhoActivity">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/baa"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/alif1"
+            android:onClick="alifActivity"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/thaa"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/taa"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/boro_ha"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/jiim"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/daal"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/kha"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/raa"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/thaal"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/siin"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/zaay"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/soyod"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/shiin"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/to"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/doyod"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/ayin"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/jo"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/fa"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/goyin"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/kaaf"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/kof"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/mim"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/lam"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/oao"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/nun"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/hamza"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/haa"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="100dp">
+        <Button
+            android:text="শেষ"
+            android:textSize="20sp"
+            android:textColor="#E91E63"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="100dp" />
+        <Button
+            android:background="@drawable/ya"
+            android:layout_width="177dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
