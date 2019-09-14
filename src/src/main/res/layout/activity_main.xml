@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:text="ভূমিকা"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:onClick="nextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="অক্ষর সমুহ"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:onClick="AkkonSomuhoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="মাখরাজ"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:onClick="makrajActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+    <Button
+        android:text="যবর"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:onClick="joborActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="অনলাইন ক্লাস"
+        android:id="@+id/online_class"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+</LinearLayout>
