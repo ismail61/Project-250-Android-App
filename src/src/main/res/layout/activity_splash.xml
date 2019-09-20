@@ -9,15 +9,17 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
     <ImageView
-        android:src="@drawable/bg"
-        android:layout_marginBottom="20dp"
+        android:src="@drawable/quran"
+        android:paddingBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <ProgressBar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
     <TextView
-        android:text="Developed By Md Ismail Hosen Raj"
+        android:text="Developed By\n Md Ismail Hosen Raj\n Abdullah Al Mokbul"
         android:textColor="#009688"
         android:gravity="center"
         android:layout_marginTop="30dp"
