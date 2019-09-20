@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".jobor_Activity"></activity>
+        <activity android:name=".Login_Activity"></activity>
+        <activity android:name=".jobor_Activity" />
         <activity android:name=".AlifActivity" />
         <activity android:name=".Akkon_SomuhoActivity" />
         <activity android:name=".MakrajActivity" />
