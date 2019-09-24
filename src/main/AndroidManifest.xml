@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login_Activity"></activity>
+        <activity android:name=".MyaccountActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".pes_Activity" />
+        <activity android:name=".jer_Activity" />
+        <activity android:name=".AboutUsActivity" />
         <activity android:name=".jobor_Activity" />
         <activity android:name=".AlifActivity" />
         <activity android:name=".Akkon_SomuhoActivity" />
         <activity android:name=".MakrajActivity" />
-        <activity android:name=".Suchona2Activity" />
         <activity android:name=".Suchona1Activity" />
-        <activity android:name=".suchonaActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
