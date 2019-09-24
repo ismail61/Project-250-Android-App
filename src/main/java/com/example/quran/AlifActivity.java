@@ -1,6 +1,7 @@
 package com.example.quran;
 
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.media.MediaPlayer;
@@ -30,6 +31,7 @@ public class AlifActivity extends Activity {
     private int backwardTime = 3000;
     private SeekBar seekbar;
     private TextView tx1,tx2,tx3;
+    private  ImageView iv;
     public static int oneTimeOnly = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +41,23 @@ public class AlifActivity extends Activity {
         b2 = (Button) findViewById(R.id.button2);
         b3 = (Button)findViewById(R.id.button3);
         b4 = (Button)findViewById(R.id.button4);
-
+        iv = (ImageView)findViewById(R.id.imageView);
         tx1 = (TextView)findViewById(R.id.textView2);
         tx2 = (TextView)findViewById(R.id.textView3);
         tx3 = (TextView)findViewById(R.id.textView4);
-        tx3.setText("Alif.mp3");
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null)
+        {
+            int mp = bundle.getInt("image");
+            iv.setImageResource(mp);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.alif);
-        /*String location = getIntent().getStringExtra("path");
-        try {
+        }
+        //int identify=Integer.parseInt(getIntent().getExtras().getString("audio"));
+
+        int mp3 = getIntent().getIntExtra("audio",0);
+        mediaPlayer = (MediaPlayer) MediaPlayer.create(this,mp3);
+        //System.out.println(location);
+        /*try {
             mediaPlayer.setDataSource(location);
             mediaPlayer.prepare();
         } catch (IOException e) {
