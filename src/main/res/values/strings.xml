@@ -4,4 +4,23 @@
     <string name="rewind"><![CDATA[<<]]></string>
     <string name="forward"><![CDATA[>>]]></string>
     <string name="pause">||</string>
+    <string-array name="makhraj">
+        <item>1 নং মাখরাজ</item>
+        <item>2 নং মাখরাজ</item>
+        <item>3 নং মাখরাজ</item>
+        <item>4 নং মাখরাজ</item>
+        <item>5 নং মাখরাজ</item>
+        <item>6 নং মাখরাজ</item>
+        <item>7 নং মাখরাজ</item>
+        <item>8 নং মাখরাজ</item>
+        <item>9 নং মাখরাজ</item>
+        <item>10 নং মাখরাজ</item>
+        <item>11 নং মাখরাজ</item>
+        <item>12 নং মাখরাজ</item>
+        <item>13 নং মাখরাজ</item>
+        <item>14 নং মাখরাজ</item>
+        <item>15 নং মাখরাজ</item>
+        <item>16 নং মাখরাজ</item>
+        <item>17 নং মাখরাজ</item>
+    </string-array>
 </resources>
