@@ -17,6 +17,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/baa"
+            android:id="@+id/baa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -33,6 +34,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/thaa"
+            android:id="@+id/saa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -40,6 +42,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/taa"
+            android:id="@+id/taa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -48,6 +51,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/boro_ha"
+            android:id="@+id/ha"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -55,6 +59,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/jiim"
+            android:id="@+id/jim"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -63,6 +68,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/daal"
+            android:id="@+id/dal"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -70,6 +76,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/kha"
+            android:id="@+id/kha"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -78,6 +85,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/raa"
+            android:id="@+id/rwa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -85,6 +93,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/thaal"
+            android:id="@+id/thaal"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -93,6 +102,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/siin"
+            android:id="@+id/seen"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -100,6 +110,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/zaay"
+            android:id="@+id/zwa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -108,6 +119,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/soyod"
+            android:id="@+id/swad"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -115,6 +127,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/shiin"
+            android:id="@+id/sheen"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -123,6 +136,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/to"
+            android:id="@+id/twa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -130,6 +144,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/doyod"
+            android:id="@+id/dwad"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -138,6 +153,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/ayin"
+            android:id="@+id/ayin"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -145,6 +161,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/jo"
+            android:id="@+id/zha"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -153,6 +170,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/fa"
+            android:id="@+id/fa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -160,6 +178,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/goyin"
+            android:id="@+id/gyhin"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -168,6 +187,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/kaaf"
+            android:id="@+id/kaf"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -175,6 +195,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/kof"
+            android:id="@+id/quf"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -183,6 +204,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/mim"
+            android:id="@+id/meem"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -190,6 +212,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/lam"
+            android:id="@+id/lam"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -198,6 +221,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/oao"
+            android:id="@+id/waw"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -205,6 +229,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/nun"
+            android:id="@+id/noon"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
@@ -213,6 +238,7 @@
         android:layout_height="100dp">
         <Button
             android:background="@drawable/hamza"
+            android:id="@+id/hamza"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -220,16 +246,19 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/haa"
+            android:id="@+id/haa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="360dp"
         android:layout_height="100dp">
-        <Button
-            android:text="শেষ"
+        <TextView
+            android:text="Back"
+            android:id="@+id/back"
             android:textSize="20sp"
-            android:textColor="#E91E63"
+            android:textColor="#009688"
+            android:paddingLeft="60dp"
             android:layout_width="177dp"
             android:layout_height="100dp" />
         <TextView
@@ -237,6 +266,7 @@
             android:layout_height="100dp" />
         <Button
             android:background="@drawable/ya"
+            android:id="@+id/yaa"
             android:layout_width="177dp"
             android:layout_height="100dp" />
     </LinearLayout>

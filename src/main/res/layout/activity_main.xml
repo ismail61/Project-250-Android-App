@@ -42,6 +42,30 @@
         android:onClick="joborActivity"
         android:layout_width="match_parent"
         android:layout_height="60dp" />
+    <Button
+        android:text="যের"
+        android:id="@+id/jerActivityId"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="পেশ"
+        android:id="@+id/pesActivityId"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="অনলাইন ক্লাস"
+        android:id="@+id/online_class"
+        android:textSize="20dp"
+        android:textColor="#216B64"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
 
 
 </LinearLayout>

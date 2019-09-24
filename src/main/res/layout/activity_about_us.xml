@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+    <TextClock
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_width="360dp"
+        android:layout_height="300dp" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#1F3535"
+        android:text="MD Ismail Hosen Raj\nDept. Software Engineering\nReg. No.2017831061\nEmail:ismailhosen601@gmail.com\nMD Mokbul Hossain\nDept. Software Engineering\nReg. No.2017831059\n"
+        android:layout_width="360dp"
+        android:layout_height="300dp" />
+
+</LinearLayout>
