@@ -19,10 +19,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.provider.ContactsContract.Intents.Insert.ACTION;
+
 
 public class MainActivity extends AppCompatActivity {
     Button online_class;
-    Button jer_activity,pes_activity;
+    Button jer_activity,pes_activity,jobor_jer_pes_activity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         online_class.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Log In Page",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Log In Page",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this,LoginActivity.class));
             }
         });
@@ -47,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,pes_Activity.class));
+            }
+        });
+        jobor_jer_pes_activity = findViewById(R.id.jobor_jer_pesActivityId);
+        jobor_jer_pes_activity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,jobor_jer_pes_Activity.class));
             }
         });
     }
@@ -72,13 +81,21 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         AlertDialog.Builder alertdialogbuilder = new AlertDialog.Builder(MainActivity.this);
         alertdialogbuilder.setIcon(R.drawable.question_mark_icon);
+        alertdialogbuilder.setCancelable(true);
         alertdialogbuilder.setTitle("  Title");
         alertdialogbuilder.setMessage("Do You Want To Exit? ");
         alertdialogbuilder.setCancelable(false);
         alertdialogbuilder.setPositiveButton("Yes.Exit!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                finish();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent);
+                finishAffinity();
+                //finish();
+                System.exit(0);
             }
         });
         alertdialogbuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -116,12 +133,18 @@ public class MainActivity extends AppCompatActivity {
         }*/
         if(item.getItemId()==R.id.shareId)
         {
-            Toast.makeText(getApplicationContext(),"Share is Selected",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(),"Share is Selected",Toast.LENGTH_SHORT).show();
+            Intent share = new Intent(Intent.ACTION_SEND);
+            share.setType("text/plain");
+            share.putExtra(Intent.EXTRA_TEXT,"Your Body Here");
+            share.putExtra(Intent.EXTRA_SUBJECT,"Your Subject Here");
+            startActivity(Intent.createChooser(share,"Share Using"));
             return true;
         }
         else if(item.getItemId()==R.id.ratingId)
         {
-            Toast.makeText(getApplicationContext(),"Rating is Selected",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(),"Rating is Selected",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(MainActivity.this,RatingActivity.class));
             return  true;
         }
         else if(item.getItemId()==R.id.aboutusId)
@@ -130,6 +153,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(),AboutUsActivity.class);
             startActivity(intent);
 
+        }
+        else if(item.getItemId()==R.id.memoNotificationId){
+            startActivity(new Intent(MainActivity.this,MemoActivity.class));
+            //Toast.makeText(getApplicationContext(),"Memo is selected ",Toast.LENGTH_SHORT).show();
+        }
+        else if(item.getItemId()==R.id.feedbackId){
+            startActivity(new Intent(MainActivity.this,feedBackActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

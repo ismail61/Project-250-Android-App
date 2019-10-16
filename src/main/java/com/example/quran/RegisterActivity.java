@@ -44,13 +44,29 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String name = nameEditText.getText().toString();
                 String signup_username = signupusernameEditText.getText().toString();
-                String email = emailEditText.getText().toString();
+                String email = emailEditText.getText().toString().trim();
                 String signup_password = signuppasswordEditText.getText().toString();
                 String confirm_password = confirmpasswordEditText.getText().toString();
 
-                if(!signup_password.equals(confirm_password))
+                int lastindex = email.lastIndexOf(".com");
+                //String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+                if(lastindex==-1){
+
+                    emailEditText.setError("Invalid email");
+                    emailEditText.requestFocus();
+                }
+                else if(!signup_password.equals(confirm_password))
                 {
                     Toast.makeText(getApplicationContext(),"Password Didn't Match",Toast.LENGTH_LONG).show();
+                }
+                else if(!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                    emailEditText.setError("Invalid Email");
+                    emailEditText.requestFocus();
+                }
+                else if (email.length() < 10) {
+                    emailEditText.setError("password minimum contain 10 character");
+                    emailEditText.requestFocus();
                 }
                 else {
                     userDetails.setName(name);
@@ -60,7 +76,7 @@ public class RegisterActivity extends AppCompatActivity {
                     userDetails.setConfirm_password(confirm_password);
 
                     long rowId = databaseHelper.insertData(userDetails);
-                    Toast.makeText(getApplicationContext(), "rowId Is : " + rowId, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "rowId Is : " + rowId, Toast.LENGTH_LONG).show();
 
                     if (rowId == -1) {
                         Toast.makeText(getApplicationContext(), "Unsuccessful Inserted", Toast.LENGTH_LONG).show();

@@ -1,6 +1,7 @@
 package com.example.quran;
 
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -52,17 +53,9 @@ public class AlifActivity extends Activity {
             iv.setImageResource(mp);
 
         }
-        //int identify=Integer.parseInt(getIntent().getExtras().getString("audio"));
 
         int mp3 = getIntent().getIntExtra("audio",0);
         mediaPlayer = (MediaPlayer) MediaPlayer.create(this,mp3);
-        //System.out.println(location);
-        /*try {
-            mediaPlayer.setDataSource(location);
-            mediaPlayer.prepare();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
         seekbar = (SeekBar)findViewById(R.id.seekBar);
         seekbar.setClickable(false);
         b2.setEnabled(false);
@@ -78,7 +71,7 @@ public class AlifActivity extends Activity {
 
                 if (oneTimeOnly == 0) {
                     seekbar.setMax((int) finalTime);
-                    oneTimeOnly = 1;
+                    //oneTimeOnly = 1;
                 }
 
                 tx2.setText(String.format("%d min, %d sec",
@@ -96,7 +89,7 @@ public class AlifActivity extends Activity {
 
                 seekbar.setProgress((int)startTime);
 
-                myHandler.postDelayed(UpdateSongTime,100);
+                myHandler.postDelayed(UpdateSongTime,1000);
                 b2.setEnabled(true);
                 b3.setEnabled(false);
             }
@@ -150,6 +143,7 @@ public class AlifActivity extends Activity {
             mediaPlayer.stop();
         }
         super.onBackPressed();
+        seekbar.setProgress(0);
     }
 
     private Runnable UpdateSongTime = new Runnable() {
@@ -162,7 +156,7 @@ public class AlifActivity extends Activity {
                                     toMinutes((long) startTime)))
             );
             seekbar.setProgress((int)startTime);
-            myHandler.postDelayed(this, 100);
+            myHandler.postDelayed(this, 1000);
         }
     };
 
