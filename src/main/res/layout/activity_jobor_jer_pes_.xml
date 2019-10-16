@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#DF1809"
     android:layout_height="match_parent"
-    tools:context=".jer_Activity">
+    android:background="#DF1809"
+    tools:context=".jobor_jer_pes_Activity">
+
     <GridView
-        android:numColumns="3"
-        android:id="@+id/jer_gried_viewId"
+        android:numColumns="2"
+        android:id="@+id/jobor_jer_pes_gried_viewId"
         android:verticalSpacing="5dp"
         android:horizontalSpacing="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></GridView>
+        android:layout_height="match_parent">
 
+    </GridView>
 </LinearLayout>

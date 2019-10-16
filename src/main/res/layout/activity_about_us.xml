@@ -5,19 +5,25 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
     tools:context=".AboutUsActivity">
-    <TextClock
-        android:gravity="center"
-        android:textSize="25dp"
-        android:layout_width="360dp"
-        android:layout_height="300dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/call_imageId"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_call" />
     <TextView
         android:gravity="center_horizontal"
         android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
         android:textSize="20dp"
         android:textColor="#1F3535"
-        android:text="MD Ismail Hosen Raj\nDept. Software Engineering\nReg. No.2017831061\nEmail:ismailhosen601@gmail.com\nMD Mokbul Hossain\nDept. Software Engineering\nReg. No.2017831059\n"
+        android:text="MD Ismail Hosen Raj\nDept. Software Engineering\nReg. No.2017831061\n\n
+        MD Mokbul Hossain\nDept. Software Engineering\nReg. No.2017831059\n"
         android:layout_width="360dp"
-        android:layout_height="300dp" />
+        android:layout_height="220dp" />
+
 
 </LinearLayout>
