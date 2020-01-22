@@ -25,7 +25,7 @@ public class jobor_jer_pes_Activity extends AppCompatActivity {
             R.drawable.mim_jobor_jer_pes,R.drawable.lam_jobor_jer_pes
             ,R.drawable.owaw_jobor_jer_pes,R.drawable.nun_jobor_jer_pes
             ,R.drawable.alif_jobor_jer_pes,R.drawable.haa_jobor_jer_pes,
-            R.drawable.whitebg,R.drawable.yaa_jobor_jer_pes};
+            R.drawable.wt,R.drawable.yaa_jobor_jer_pes};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

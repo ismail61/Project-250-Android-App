@@ -16,7 +16,7 @@ public class jobor_Activity extends AppCompatActivity {
             R.drawable.quf_jobor,R.drawable.fa_jobor,R.drawable.gyin_jobor,
             R.drawable.mim_jobor,R.drawable.lam_jobor,R.drawable.kaf_jobor,
             R.drawable.haa_jobor,R.drawable.owaw_jobor,R.drawable.nun_jobor,
-            R.drawable.whitebg,R.drawable.yaa_jobor,R.drawable.alif_jobor};
+            R.drawable.wt,R.drawable.yaa_jobor,R.drawable.alif_jobor};
     private GridView gridView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

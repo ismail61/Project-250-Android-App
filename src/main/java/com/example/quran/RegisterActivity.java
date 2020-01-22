@@ -2,7 +2,11 @@ package com.example.quran;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +20,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText nameEditText,signupusernameEditText,emailEditText,signuppasswordEditText,confirmpasswordEditText;
     private TextView signuploginText;
     UserDetails_Getter_Setter_method userDetails;
+    private static final String SERVER_NAME = "http://localhost/SyncDemo/Syncinfo.php" ;
     DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,22 +74,33 @@ public class RegisterActivity extends AppCompatActivity {
                     emailEditText.requestFocus();
                 }
                 else {
-                    userDetails.setName(name);
-                    userDetails.setSignup_username(signup_username);
-                    userDetails.setSignup_password(signup_password);
-                    userDetails.setEmail(email);
-                    userDetails.setConfirm_password(confirm_password);
+                    if (checkNetworkConnection()) {
+                        userDetails.setName(name);
+                        userDetails.setSignup_username(signup_username);
+                        userDetails.setSignup_password(signup_password);
+                        userDetails.setEmail(email);
+                        userDetails.setConfirm_password(confirm_password);
 
-                    long rowId = databaseHelper.insertData(userDetails);
-                    //Toast.makeText(getApplicationContext(), "rowId Is : " + rowId, Toast.LENGTH_LONG).show();
+                        long rowId = databaseHelper.insertData(userDetails);
+                        //Toast.makeText(getApplicationContext(), "rowId Is : " + rowId, Toast.LENGTH_LONG).show();
 
-                    if (rowId == -1) {
-                        Toast.makeText(getApplicationContext(), "Unsuccessful Inserted", Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Row " + rowId + "is successful Inserted", Toast.LENGTH_LONG).show();
+                        if (rowId == -1) {
+                            Toast.makeText(getApplicationContext(), "Unsuccessful Inserted", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Row " + rowId + "is successful Inserted", Toast.LENGTH_LONG).show();
+                        }
+                    }else{
+                        Toast.makeText(getApplicationContext(),"Please turn on your internet",Toast.LENGTH_LONG).show();
+
                     }
                 }
+
             }
         });
+    }
+    public boolean checkNetworkConnection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        return ( networkInfo!=null && networkInfo.isConnected());
     }
 }

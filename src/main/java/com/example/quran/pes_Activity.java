@@ -17,7 +17,7 @@ public class pes_Activity extends AppCompatActivity {
             R.drawable.quf_pes,R.drawable.fa_pes,R.drawable.gyin_pes,
             R.drawable.mim_pes,R.drawable.lam_pes,R.drawable.kaf_pes,
             R.drawable.haa_pes,R.drawable.owaw_pes,R.drawable.nun_pews,
-            R.drawable.whitebg,R.drawable.yaa_pes,R.drawable.alif_pes};
+            R.drawable.wt,R.drawable.yaa_pes,R.drawable.alif_pes};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

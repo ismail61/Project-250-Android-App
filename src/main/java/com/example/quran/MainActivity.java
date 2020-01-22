@@ -23,18 +23,39 @@ import static android.provider.ContactsContract.Intents.Insert.ACTION;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button online_class;
-    Button jer_activity,pes_activity,jobor_jer_pes_activity;
+    Button tanbin_activity,onine_class_on;
+    Button jer_activity,pes_activity,jobor_jer_pes_activity,jojom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        online_class = (Button)findViewById(R.id.online_class);
-        online_class.setOnClickListener(new View.OnClickListener() {
+        //online_class = (Button)findViewById(R.id.online_class);
+        onine_class_on = (Button)findViewById(R.id.online_class_one);
+        tanbin_activity = (Button)findViewById(R.id.tanbinActivityId) ;
+        jojom = (Button)findViewById(R.id.jojomActivityId);
+        jojom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Jojom_Activity.class));
+            }
+        });
+        onine_class_on.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Login_Acivity.class));
+            }
+        });
+        /*online_class.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Toast.makeText(getApplicationContext(),"Log In Page",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            }
+        });*/
+        tanbin_activity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,tanbin_Activity.class));
             }
         });
         jer_activity = (Button)findViewById(R.id.jerActivityId);

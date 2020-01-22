@@ -17,7 +17,7 @@ public class jer_Activity extends AppCompatActivity {
             R.drawable.quf_jer,R.drawable.fa_jer,R.drawable.gyin_jer,
             R.drawable.mim_jer,R.drawable.lam_jer,R.drawable.kaf_jer,
             R.drawable.haa_jer,R.drawable.owaw_jer,R.drawable.nun_jer,
-            R.drawable.whitebg,R.drawable.yaa_jer,R.drawable.alif_jer};
+            R.drawable.wt,R.drawable.yaa_jer,R.drawable.alif_jer};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
