@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -75,8 +80,36 @@
         android:layout_width="match_parent"
         android:layout_height="60dp" />
     <Button
+        android:text="তানবীন"
+        android:id="@+id/tanbinActivityId"
+        android:textSize="20dp"
+        android:background="#3D5069"
+        android:textColor="#35EE29"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="যজম"
+        android:id="@+id/jojomActivityId"
+        android:textSize="20dp"
+        android:background="#3D5069"
+        android:textColor="#35EE29"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:text="নুন সাকিন"
+        android:id="@+id/nun_sakinActivityId"
+        android:textSize="20dp"
+        android:background="#3D5069"
+        android:textColor="#35EE29"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
         android:text="অনলাইন ক্লাস"
-        android:id="@+id/online_class"
+        android:id="@+id/online_class_one"
         android:textSize="20dp"
         android:background="#3D5069"
         android:textColor="#35EE29"
@@ -86,3 +119,4 @@
 
 
 </LinearLayout>
+</ScrollView>

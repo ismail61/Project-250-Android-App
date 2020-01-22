@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".tanbin_Activity">
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/dui_jobor_activity"
+        android:height="200dp"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:layout_height="180dp"
+        android:text="দুই যবর"
+        android:background="#ba160c"
+         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/dui_jer_activity"
+        android:height="200dp"
+        android:layout_marginTop="10dp"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:layout_height="180dp"
+        android:text="দুই যের"
+        android:background="#ba160c"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/dui_pes_activity"
+        android:layout_marginTop="10dp"
+        android:height="200dp"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:layout_height="180dp"
+        android:text="দুই পেশ"
+        android:background="#ba160c"
+        />
+
+</LinearLayout>
